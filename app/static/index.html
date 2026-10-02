@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>商品真伪受理 · 门店质控系统</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#/cases">
+      <span class="brand-mark">质</span>
+      <span class="brand-text">商品真伪受理<small>门店 · 批次冻结 · 总部质控</small></span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#/cases" data-route="cases">调查列表</a>
+      <a href="#/intake" data-route="intake">受理登记</a>
+      <a href="#/query" data-route="query">防伪码查询</a>
+      <a href="#/inventory" data-route="inventory">库存与冻结</a>
+      <a href="#/audit" data-route="audit">审计日志</a>
+    </nav>
+    <div class="actor">
+      <label>当前操作身份</label>
+      <select id="actorSelect"></select>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="container"></main>
+
+<div id="toast" class="toast" hidden></div>
+<div id="modal" class="modal" hidden>
+  <div class="modal-card">
+    <button class="modal-close" id="modalClose" aria-label="关闭">×</button>
+    <img id="modalImg" alt="证据大图">
+  </div>
+</div>
+
+<footer class="footer">
+  演示系统：SQLite 本地存储 · 证据图片为本地生成的虚构 SVG 凭证 · 防伪查询与短信通知均为模拟适配器
+</footer>
+
+<script src="/app.js"></script>
+</body>
+</html>

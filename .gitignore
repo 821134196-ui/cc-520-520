@@ -13,3 +13,7 @@ build/
 轨迹/
 录屏/
 视频/
+
+# 运行期生成的数据与虚构凭证图片
+/app/data/
+/app/static/evidence/
